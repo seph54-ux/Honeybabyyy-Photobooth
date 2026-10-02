@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-fredoka {
+    font-family: 'Fredoka', cursive, sans-serif;
+  }
+  .font-caveat {
+    font-family: 'Caveat', cursive, sans-serif;
+  }
+  .font-pacifico {
+    font-family: 'Pacifico', cursive, sans-serif;
+  }
+  .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
+  .font-gaegu {
+    font-family: 'Gaegu', cursive, sans-serif;
+  }
+  .font-indie {
+    font-family: 'Indie Flower', cursive, sans-serif;
+  }
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Cute background patterns */
+  .pattern-polka-dots {
+    background-image: radial-gradient(currentColor 1.5px, transparent 1.5px);
+    background-size: 16px 16px;
+  }
+  .pattern-gingham {
+    background-image: 
+      linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.4) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.4) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+  .pattern-grid {
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  .pattern-hearts {
+    background-image: radial-gradient(circle at 50% 35%, currentColor 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+}
+
+/* Custom scrollbar for cute look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(253, 242, 248, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
