@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera, Download, Heart, Image as ImageIcon, RotateCcw, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface NavbarProps {
   onOpenGallery: () => void;
@@ -49,6 +50,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Right Action buttons */}
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* PWA In-App Mobile Install Button */}
+          <PWAInstallButton />
+
           {/* Sound Toggle */}
           <button
             onClick={onToggleSound}

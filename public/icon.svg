@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="45%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#881337" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Camera Body -->
+  <g filter="url(#softShadow)">
+    <rect x="96" y="148" width="320" height="236" rx="44" fill="#ffffff" />
+    <path d="M 188 148 L 216 112 L 296 112 L 324 148 Z" fill="#ffffff" />
+    
+    <!-- Camera Lens Outer Circle -->
+    <circle cx="256" cy="266" r="76" fill="#fdf2f8" stroke="#fb7185" stroke-width="10" />
+    
+    <!-- Camera Lens Inner Dark Aperture -->
+    <circle cx="256" cy="266" r="54" fill="#1e1b4b" />
+    
+    <!-- Heart in lens reflect -->
+    <path d="M 256 250 C 256 242, 246 238, 240 244 C 234 250, 240 258, 256 274 C 272 258, 278 250, 272 244 C 266 238, 256 242, 256 250 Z" fill="#fb7185" />
+    <circle cx="270" cy="252" r="6" fill="#ffffff" opacity="0.85" />
+
+    <!-- Flash / Viewfinder & Honey Tag -->
+    <circle cx="150" cy="198" r="16" fill="#fed7aa" stroke="#f97316" stroke-width="4" />
+    <rect x="330" y="186" width="48" height="24" rx="8" fill="#fbcfe8" />
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M 390 90 L 396 114 L 420 120 L 396 126 L 390 150 L 384 126 L 360 120 L 384 114 Z" fill="url(#goldGrad)" />
+  <circle cx="110" cy="110" r="14" fill="#fef08a" />
+  <circle cx="430" cy="410" r="18" fill="#fef08a" />
+
+  <!-- Little Paw Accent -->
+  <g transform="translate(130, 320) scale(0.4)">
+    <ellipse cx="60" cy="80" rx="35" ry="30" fill="#f43f5e" opacity="0.85" />
+    <circle cx="35" cy="40" r="14" fill="#f43f5e" opacity="0.85" />
+    <circle cx="65" cy="30" r="14" fill="#f43f5e" opacity="0.85" />
+    <circle cx="95" cy="40" r="14" fill="#f43f5e" opacity="0.85" />
+  </g>
+</svg>

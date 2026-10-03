@@ -4,6 +4,7 @@ import { CameraView } from './components/CameraView';
 import { StripPreview } from './components/StripPreview';
 import { CustomizerToolbar } from './components/CustomizerToolbar';
 import { GalleryModal } from './components/GalleryModal';
+import { OfflineIndicator } from './components/OfflineIndicator';
 import { 
   PhotoboothConfig, 
   CapturedStrip, 
@@ -484,6 +485,9 @@ export default function App() {
         onDeleteStrip={handleDeleteSavedStrip}
         onSaveCurrentStrip={handleSaveCurrentStrip}
       />
+
+      {/* PWA Offline Connection Indicator */}
+      <OfflineIndicator />
 
       {/* Cute Footer */}
       <footer className="mt-12 py-6 border-t border-rose-200/50 bg-white/60 text-center text-xs text-slate-500">
