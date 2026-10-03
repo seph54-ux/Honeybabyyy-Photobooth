@@ -367,7 +367,7 @@ export default function App() {
   const hasPhotos = photos.some(Boolean);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-rose-50/70 via-pink-50/30 to-amber-50/40">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-rose-50/70 via-pink-50/30 to-amber-50/40 overflow-x-hidden w-full max-w-full">
       {/* Top Navbar */}
       <Navbar
         onOpenGallery={handleOpenGallery}
@@ -381,18 +381,18 @@ export default function App() {
       />
 
       {/* Hero Welcome Banner */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-5 pb-2 w-full">
-        <div className="bg-gradient-to-r from-pink-400 via-rose-400 to-amber-300 rounded-3xl p-4 sm:p-5 text-white shadow-lg shadow-rose-200/50 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl sm:text-4xl animate-bounce">💖</span>
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 pt-3 sm:pt-5 pb-2 w-full">
+        <div className="bg-gradient-to-r from-pink-400 via-rose-400 to-amber-300 rounded-3xl p-3.5 sm:p-5 text-white shadow-lg shadow-rose-200/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <span className="text-2xl sm:text-4xl animate-bounce shrink-0">💖</span>
             <div>
-              <h2 className="font-fredoka font-bold text-lg sm:text-xl tracking-wide flex items-center gap-2">
+              <h2 className="font-fredoka font-bold text-base sm:text-xl tracking-wide flex flex-wrap items-center gap-1.5 sm:gap-2">
                 <span>Photobooth for My Favorite Girl</span>
-                <span className="px-2 py-0.5 rounded-full text-xs font-semibold bg-white/20 text-white backdrop-blur-xs">
+                <span className="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-semibold bg-white/20 text-white backdrop-blur-xs">
                   Minions • Puung • Cute Girl • Cats
                 </span>
               </h2>
-              <p className="text-xs sm:text-sm text-pink-50 font-medium">
+              <p className="text-[11px] sm:text-sm text-pink-50 font-medium mt-0.5">
                 Snap cute photos together, customize borders & playful stickers, and download your instant photo strip!
               </p>
             </div>

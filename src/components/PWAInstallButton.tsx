@@ -38,10 +38,10 @@ export const PWAInstallButton: React.FC = () => {
           onClick={handleInstallClick}
           disabled={isInstalling}
           title="Install Honeybabyyy Booth onto your home screen"
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-fredoka font-semibold text-xs shadow-md shadow-rose-200 hover:shadow-lg transition-all cursor-pointer hover:scale-102 active:scale-98 animate-pulse"
+          className="flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-fredoka font-semibold text-[11px] sm:text-xs shadow-xs hover:shadow-md transition-all cursor-pointer shrink-0"
         >
-          <Smartphone size={14} />
-          <span>Install App</span>
+          <Smartphone size={13} />
+          <span className="hidden xs:inline">Install</span>
         </button>
       )}
 
@@ -50,10 +50,10 @@ export const PWAInstallButton: React.FC = () => {
         <button
           onClick={handleIOSClick}
           title="Install Honeybabyyy Booth on iPhone / iPad"
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-rose-100 hover:bg-rose-200 text-rose-800 font-fredoka font-semibold text-xs border border-rose-300 transition-all cursor-pointer hover:scale-102"
+          className="flex items-center gap-1 px-2 sm:px-3 py-1.5 rounded-xl sm:rounded-2xl bg-rose-100 hover:bg-rose-200 text-rose-800 font-fredoka font-semibold text-[11px] sm:text-xs border border-rose-300 transition-all cursor-pointer shrink-0"
         >
-          <Smartphone size={14} className="text-rose-600" />
-          <span>Install on iPhone</span>
+          <Smartphone size={13} className="text-rose-600" />
+          <span className="hidden xs:inline">Install</span>
         </button>
       )}
 
